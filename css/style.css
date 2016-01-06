@@ -179,12 +179,18 @@ nav {
 #para-head {
     height: 70vh;
 }
-#header_cont h1 {
+
+#para-head h1 {
+    padding-top: 18%;
     font-size: 6em;
+    color: #f5f5f5;
     margin-bottom: 0px;
+    text-align:center;
 }
-#header_cont h3 {
+#para-head h3 {
     font-size: 1.8em;
+    color: #f5f5f5;
+    text-align:center;
 }
 .text_cont {
     padding-top: 100px;
@@ -215,7 +221,8 @@ nav {
     text-align: center;
     color: #f5f5f5;
     margin-top: -450px;
-    margin-bottom: 200px;
+    top: 0px;
+    padding-bottom: 200px;
 }
 #para-2 {
     height: 30vh;
