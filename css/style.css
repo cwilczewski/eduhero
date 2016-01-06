@@ -39,7 +39,7 @@ nav {
     background-color: #212121;
     z-index: 999;
     height: 50px;
-    max-width: 100%;
+    width: 100%;
     top: 0;
     transition: .5s ease-in-out;
 }
@@ -81,6 +81,7 @@ nav {
     position: absolute;
     top: -6px;
     padding: 30px 65px 35px 17px;
+    text-decoration: none;
 }
 #toggle_cont p {
     position: relative;
@@ -90,6 +91,7 @@ nav {
     color: #F5F5F5;
     font-weight: 700;
     cursor: pointer;
+    
 }
 #toggle span, #toggle span:before, #toggle span:after {
   cursor: pointer;
