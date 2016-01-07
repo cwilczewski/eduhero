@@ -3,9 +3,9 @@ $(document).ready(function () {
     document.querySelector("#toggle_cont")
         .addEventListener("click", function () {
             if (toggle.classList.toggle("active")) {
-                document.getElementById('drop').style.top = "0px";
+                document.getElementById('drop').style.top = "0vh";
             } else {
-                document.getElementById('drop').style.top = "-455px";
+                document.getElementById('drop').style.top = "-100vh";
             }
         });
 

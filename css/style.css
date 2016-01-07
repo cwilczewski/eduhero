@@ -10,9 +10,11 @@ body {
 }
 h1, h2{
     font-weight: 700;
+    transition: all 0.8s cubic-bezier(.1,.02,.02,.99);
 }
 p, h3 {
     font-weight: 400;
+    transition: all 0.8s cubic-bezier(.1,.02,.02,.99);
 }
 
 /*ClearFix*/
@@ -79,7 +81,7 @@ nav {
 
 #toggle {
     position: absolute;
-    top: -6px;
+    top: -3px;
     padding: 30px 65px 35px 17px;
     text-decoration: none;
 }
@@ -128,7 +130,7 @@ nav {
     position: fixed;
     background-color: #212121;
     z-index: 999;
-    height: 50px;
+    height: 65px;
     width: 100%;
 }
 
@@ -145,11 +147,12 @@ nav {
 #mobile_nav ul {
     position: fixed;
     background-color: #212121;
-    width: 100%;
-    top: -455px;
+    height: 100vh;
+    width: 100vw;
+    top: -100vh;
     z-index: 998;
     transition: 1s, cubic-bezier(.42, 0, .58, 1); 
-    padding-left: 20px;
+    padding-left: 5vw;
 }
 #drop li:first-of-type {
     padding-top: 90px;
@@ -160,9 +163,7 @@ nav {
 }
 #drop li{
     margin-left: 0px;
-    width: 90%;
-    border-top: solid 2px;
-    
+    width: 90%;    
 }
 #drop li, #drop a{
     display: block;
@@ -170,6 +171,7 @@ nav {
     text-decoration: none;
     font-size: 40px;
     padding-top: 25px;
+    border-bottom: solid 2px;
 }
 
 
@@ -181,7 +183,7 @@ nav {
 }
 
 #para-head h1 {
-    padding-top: 18%;
+    padding-top: 22vh;
     font-size: 6em;
     color: #f5f5f5;
     margin-bottom: 0px;
@@ -531,17 +533,77 @@ footer a {
 
 @media only screen and (max-width: 768px) {
     /*Hide and show mobile name and shtuff*/
-        #desk_nav {
-            visibility: hidden;
-        }
-        #mobile_nav {
-            visibility: visible;
-        }
+    #desk_nav {
+        visibility: hidden;
+    }
+    #mobile_nav {
+        visibility: visible;
+    }
     #sub_cont {
         flex-direction: column;
     }
     #cont_cont{
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .text_cont {
+        padding: 70px 10% 0;
+    }
+    #para-head h1 {
+        font-size: 4em;
+    }
+    #para-head h3 {
+        font-size: 1.5em;
+    }
+    .text_cont h2 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .underline {
+        width: 150px !important;
+        margin-left: auto;
+    }
+    .text_cont p {
+        padding: 0;
+        font-size: 1.5em;
+        text-align: justify;
+    }
+    .link_cont {
+        float: none;
+    }
+    .link_cont a {
+        font-size: 1.5em;
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    .sub_info {
+        background: rgba(0,0,0,0.1);
+        padding: 5%;
+    }
+    #sub_cont img {
+        width: 70%;
+    }
+    .cont_links {
+        width: 115px;
+    }
+    #cont_cont img {
+        width: 100%;
+    }
+    footer{
+        height: 60px;
+    }
+    .foot-left{
+        text-align: center;
+        float: none;
+    }
+    .foot-right{
+        display: flex;
+        float: none;
+        margin: 5px 0 0;
+    }
 }
