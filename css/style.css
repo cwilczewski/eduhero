@@ -555,6 +555,10 @@ footer a {
     #para-head h1 {
         font-size: 4em;
     }
+    #testimonials_title{
+        font-size: 3em !important;
+        padding-top: 28vh !important;    
+    }
     #para-head h3 {
         font-size: 1.5em;
     }
@@ -571,6 +575,15 @@ footer a {
         padding: 0;
         font-size: 1.5em;
         text-align: justify;
+    }
+    .testimonials p {
+        text-align: center !important;
+    }
+    .tes_name h2 {
+        margin-bottom: 0;
+    }
+    .tes_name h3 {
+        text-align: center;
     }
     .link_cont {
         float: none;
