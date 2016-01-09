@@ -559,6 +559,9 @@ footer a {
         font-size: 3em !important;
         padding-top: 28vh !important;    
     }
+    #about_title {
+        padding-top: 19vh !important;
+    }
     #para-head h3 {
         font-size: 1.5em;
     }
