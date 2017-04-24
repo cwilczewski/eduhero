@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['email'])) {
     
-    $email_to = "john.filipe.silva@gmail.com";
+    $email_to = "c.wilczewski@gmail.com";
     $email_subject = "EduHero";
     
     function died($error) {
@@ -16,16 +16,14 @@ if(isset($_POST['email'])) {
     
     //validation expected data exists
     
-    if(!isset($_POST['fname']) ||
-        !isset($_POST['lname']) ||
+    if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['subject']) ||
         !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
     
-    $first_name = $_POST['first']; // required
-    $last_name = $_POST['last']; // required
+    $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
     $subject_form = $_POST['subject']; // not required
     $message = $_POST['message']; // required
@@ -43,13 +41,10 @@ if(isset($_POST['email'])) {
  
     $string_exp = "/^[A-Za-z .'-]+$/";
     
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  if(!preg_match($string_exp,$name)) {
+    $error_message .= 'The Name you entered does not appear to be valid.<br />';
   }
- 
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
+
  
   if(strlen($message) < 2) {
     $error_message .= 'The Comments you entered do not appear to be valid.<br />';
@@ -66,8 +61,7 @@ if(isset($_POST['email'])) {
       return str_replace($bad,"",$string);
     } 
  
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+    $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Subject: ".clean_string($subject_form)."\n";
     $email_message .= "Comments: ".clean_string($message)."\n";
@@ -78,15 +72,21 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
- 
-?>
- 
-<!-- include your own success html here -->
-<script>window.location.href="http://www.eduhero.ca/contactsent.html"</script>
 
+ ?>
 
-<?php
+    <div>
+        <h2>Thanks, we'll be in touch soon!</h2></div>
+
+    <style>
+        h2 {
+            margin-top: 50px;
+            color: #FFAB00;
+            font-size: 2.4em;
+        }
+    </style>
+    <?php
  
 }
- 
+
 ?>

@@ -1,0 +1,24 @@
+<svg id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <defs>
+        <style>
+            .bird,
+            .outline {
+                fill: none;
+                stroke: #fafbfb;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 4px;
+            }
+            
+            .bird {
+                fill-rule: evenodd;
+            }
+            .outline {
+                opacity: 0;
+            }
+        </style>
+    </defs>
+    <title>social</title>
+    <path class="bird" d="M88.93,39.22s6-.47,8.39-2.27c0,0-.58,2.06-7.78,8.59,0,0,2.43,35.23-34.53,43.86,0,0-18.74,4-32.32-6.21,0,0,14.22,2.53,22.21-6.32,0,0-10.32.11-13.58-10.42,0,0,3.9.84,6.21-.21,0,0-11.69-2.42-11.48-15.16,0,0,3.16,2.32,6,1.9,0,0-10.53-9-4-20.11,0,0,14.11,16.68,31.59,15.69A15,15,0,0,1,84.9,34.3,17.21,17.21,0,0,0,95.12,31S95.35,34.25,88.93,39.22Z" />
+    <circle class="outline" cx="60" cy="60" r="56.98" />
+</svg>

@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /.cl.selector/
+Disallow: /.cpanel/
+Disallow: /.cp.horde/
+Disallow: /.htpasswrds/
+Disallow: /.mysql_backup/
+Disallow: /.trash/
+Disallow: /access-logs/
+Disallow: /etc/
+Disallow: /logs/
+Disallow: /mail/
+Disallow: /public_ftp/
+Disallow: /tmp/
+Disallow: /tmp/ai

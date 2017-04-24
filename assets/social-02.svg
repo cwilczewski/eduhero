@@ -1,0 +1,21 @@
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <defs>
+        <style>
+            .outline,
+            .face {
+                fill: none;
+                stroke: #fafbfb;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 4px;
+            }
+            
+            .face {
+                fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+    <title>social</title>
+    <circle class="outline" cx="60" cy="60" r="56.98" />
+    <path class="face" d="M82.51,21.12H70s-14.09-1-17.7,13.23c0,0-1.31,3.73-1.13,12.9H37.49V58.08H52.24V98.9H67V58.12h14.8V47.24H67V40.7c0-4.24,2.87-8.3,9.38-8.3h6.14V21.12Z" />
+</svg>

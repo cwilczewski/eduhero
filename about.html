@@ -3,28 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="One on one tutoring that meets every child's needs, regardless of their skill level.">
+    <meta name="keywords" content="eduhero, writing, school, essay, science, lab, need, provide, high, child">
+    <meta name="robots" content="index, follow">
     <title>EduHero - Testimontials</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <title>Index</title>
 </head>
 
 <body>
-    <nav id="desk_nav" class="nav">
-        <div id="title_nav">
-            <p>EduHero</p>
+
+    <nav>
+        <div id="nav-icon">
+            <img src="assets/logo.png">
         </div>
-        <ul>
+        <ul id="nav-links">
             <a href="index.html">
                 <li>Home</li>
             </a>
-            <a href="tes.html">
+            <a href="testimonials.html">
                 <li>Testimonials</li>
             </a>
-            <a href="#" id="active">
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <div id="toggle-nav">
+            <a id="toggle" href="#" onClick="return false;"><span></span><span></span><span></span><p>Menu</p></a>
+        </div>
+        <ul id="slide">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="testimonials.html">
+                <li>Testimonials</li>
+            </a>
+            <a href="#">
                 <li>About</li>
             </a>
             <a href="contact.html">
@@ -33,61 +58,155 @@
         </ul>
     </nav>
 
-    <nav id="mobile_nav">
-        <div id="toggle_cont">
-            <a id="toggle" href="#"><span></span><span></span><span></span><p>Menu</p></a> 
-        </div>
-        <ul id="drop">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="tes.html">Testimonials</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <div id="main-wrapper" class="about-page">
 
-    <div id="main_cont">
-      <div id="para-head" class="parallax-window" data-parallax="scroll" data-image-src="assets/test/1.jpg">
-        <h1 id="about_title">About EduHero</h1>
-                <h3>Some more information about this service</h3>
+        <header>
+
+            <div id="header-content">
+                <h1>About EduHero</h1>
+                <h2>Some more information about this service</h2>
+            </div>
+
+        </header>
+
+        <div id="about-content-area">
+
+            <div id="about" class="about-section">
+
+                <article class="text_cont">
+                    <p>EduHero was started by me, John Silva. With years of tutoring and teaching experience, particularly in the fields of Mathematics and Science, I can help students who need some extra help get back on track with their studies. This includes a number of services such as private in-home tutoring and editing of lab reports. EduHero can also provide essay writing help and editing. Currently the EduHero team consists of its founder, but is looking to expand in the near future.</p>
+
+                    <img id="profile" src="assets/john.jpg" alt="Profile of John Silva himself!">
+
+                    <p>With an honours Bachelor of Science (hB.Sc) degree and a Master of Teaching (MT) degree, I am fully equipped with knowledge of content in Science and Mathematics. Further, my background has provided me with expertise in the school curriculum, and setting students up for success by also helping them to develop study habits that allows them to achieve their goals. Last but not least, I am an Ontario Certified Teacher (OCT).</p>
+                </article>
+
+
+            </div>
+
         </div>
-        
-         <div class="about_cont">
-            <article class="text_cont">
-                <p>EduHero was started by me, John Silva. With years of tutoring and teaching experience, particularly in the fields of Mathematics and Science, I can help students who need some extra help get back on track with their studies. This includes a number of services such as private in-home tutoring and editing of lab reports. EduHero can also provide essay writing help and editing. Currently the EduHero team consists of its founder, but is looking to expand in the near future.</p>
-                <p>With an honours Bachelor of Science (hB.Sc) degree and a Master of Teaching (MT) degree, I am fully equipped with knowledge of content in Science and Mathematics. Further, my background has provided me with expertise in the school curriculum, and setting students up for success by also helping them to develop study habits that allows them to achieve their goals. Last but not least, I am an Ontario Certified Teacher (OCT).</p>
-            </article>
-        </div>
+
+
+    </div>
 
     </div>
 
     <footer>
-        <div class="foot-left">
-            <p>Site by: <a href="http://www.chriswilcz.com">Chris Wilczewski</a></p>
+
+        <div id="created-link">
+            <p>Site created by <a href="chriswilcz.com">Chris Wilczewski</a></p>
         </div>
-        <div class="foot-right">
-            <a href="https://www.facebook.com" alt="Facebook">
-                <img src="assets/social/facebook.png" draggable="false">
-            </a>
-            <a href="https://www.facebook.com" alt="Facebook">
-                <img src="assets/social/twitter.png" draggable="false">
-            </a>
-            <a href="https://www.facebook.com" alt="Facebook">
-                <img src="assets/social/linked.png" draggable="false">
-            </a>
+
+        <div id="social-links">
+            <p>Follow us:</p>
+
+            <div id="social-container">
+                <a href="#">
+                    <svg id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                        <defs>
+                            <style>
+                                .bird,
+                                .outline {
+                                    fill: none;
+                                    stroke: #fafbfb;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 4px;
+                                    transition: all cubic-bezier(.62, .28, .23, .99) 0.4s;
+                                }
+                                
+                                .bird {
+                                    fill-rule: evenodd;
+                                }
+                                
+                                .outline {
+                                    opacity: 0;
+                                }
+                            </style>
+                        </defs>
+                        <title>social</title>
+                        <path class="bird" d="M88.93,39.22s6-.47,8.39-2.27c0,0-.58,2.06-7.78,8.59,0,0,2.43,35.23-34.53,43.86,0,0-18.74,4-32.32-6.21,0,0,14.22,2.53,22.21-6.32,0,0-10.32.11-13.58-10.42,0,0,3.9.84,6.21-.21,0,0-11.69-2.42-11.48-15.16,0,0,3.16,2.32,6,1.9,0,0-10.53-9-4-20.11,0,0,14.11,16.68,31.59,15.69A15,15,0,0,1,84.9,34.3,17.21,17.21,0,0,0,95.12,31S95.35,34.25,88.93,39.22Z" />
+                        <circle class="outline" cx="60" cy="60" r="56.98" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                        <defs>
+                            <style>
+                                .outline,
+                                .face {
+                                    fill: none;
+                                    stroke: #fafbfb;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 4px;
+                                    transition: all cubic-bezier(.62, .28, .23, .99) 0.4s;
+                                }
+                                
+                                .face {
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <title>social</title>
+                        <circle class="outline" cx="60" cy="60" r="56.98" />
+                        <path class="face" d="M82.51,21.12H70s-14.09-1-17.7,13.23c0,0-1.31,3.73-1.13,12.9H37.49V58.08H52.24V98.9H67V58.12h14.8V47.24H67V40.7c0-4.24,2.87-8.3,9.38-8.3h6.14V21.12Z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                        <defs>
+                            <style>
+                                .outline,
+                                .linked {
+                                    fill: none;
+                                    stroke: #fafbfb;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 4px;
+                                    transition: all cubic-bezier(.62, .28, .23, .99) 0.4s;
+                                }
+                                
+                                .linked {
+                                    fill-rule: evenodd;
+                                }
+                                
+                                .outline {
+                                    opacity: 0;
+                                }
+                            </style>
+                        </defs>
+                        <title>social</title>
+                        <circle class="outline" cx="60" cy="60" r="56.98" />
+                        <path class="linked" d="M80.6,93.4V67.29c0-6-3-10-8.23-10A9.26,9.26,0,0,0,64,62.65a10.37,10.37,0,0,0-.47,3.6V93.4H50.14v-32c0-5.77,0-10.83-.14-15l12.25-.23,0.66,6.9h0.28a16.62,16.62,0,0,1,14.29-7.47c9.46,0,16.32,6.34,16.32,20V93.4H80.6ZM33.67,41a7.08,7.08,0,0,1-7.48-7.19c0-4.07,3-7.19,7.66-7.19s7.47,3.12,7.57,7.19S38.49,41,33.67,41ZM40,93.16H26.58v-47H40v47Z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-        <span class="clear"></span>
+
     </footer>
 
 </body>
 
-<script src="js/script.js"></script>
+
+<script src="js/script.js">
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-73228830-2', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </html>

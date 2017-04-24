@@ -1,0 +1,24 @@
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <defs>
+        <style>
+            .outline,
+            .linked {
+                fill: none;
+                stroke: #fafbfb;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 4px;
+            }
+            
+            .linked {
+                fill-rule: evenodd;
+            }
+            .outline {
+                opacity: 0;
+            }
+        </style>
+    </defs>
+    <title>social</title>
+    <circle class="outline" cx="60" cy="60" r="56.98" />
+    <path class="linked" d="M80.6,93.4V67.29c0-6-3-10-8.23-10A9.26,9.26,0,0,0,64,62.65a10.37,10.37,0,0,0-.47,3.6V93.4H50.14v-32c0-5.77,0-10.83-.14-15l12.25-.23,0.66,6.9h0.28a16.62,16.62,0,0,1,14.29-7.47c9.46,0,16.32,6.34,16.32,20V93.4H80.6ZM33.67,41a7.08,7.08,0,0,1-7.48-7.19c0-4.07,3-7.19,7.66-7.19s7.47,3.12,7.57,7.19S38.49,41,33.67,41ZM40,93.16H26.58v-47H40v47Z" />
+</svg>
